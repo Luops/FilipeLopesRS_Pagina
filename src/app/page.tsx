@@ -75,7 +75,7 @@ export default function Home() {
               windowWidth > 1439 && "text-5xl"
             } font-bold font-quickSand -mb-4`}
           >
-            Canditado a vereador
+            Candidato a vereador
           </h4>
           <h3
             className={`${
