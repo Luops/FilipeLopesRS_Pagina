@@ -319,7 +319,7 @@ export default function Home() {
             <h6 className="text-2xl uppercase font-bold">Instragram</h6>
           </Link>
           <Link
-            href="https://www.facebook.com/filipelopesrs?mibextid=ZbWKwL"
+            href="https://www.facebook.com/FilipeLopesRs1?mibextid=ZbWKwL"
             target="_blank"
             className={`${
               windowWidth > 760 ? "w-[300px]" : "w-full"
@@ -331,7 +331,7 @@ export default function Home() {
             <h6 className="text-2xl uppercase font-bold">Facebook Pessoal</h6>
           </Link>
           <Link
-            href="https://www.facebook.com/FilipeLopesRs1?mibextid=ZbWKwL"
+            href="https://www.facebook.com/filipelopesrs?mibextid=ZbWKwL"
             target="_blank"
             className={`${
               windowWidth > 760 ? "w-[300px]" : "w-full"
