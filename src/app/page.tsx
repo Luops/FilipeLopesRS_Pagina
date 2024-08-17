@@ -8,7 +8,7 @@ import Image from "next/image";
 
 // Images
 import Filipe from "../app/assets/DSC_3217 .png";
-import Local from "../app/assets/Loca_exemplo.jpeg";
+import Local from "../app/assets/Lider_Madeiras.jpg";
 
 // Animations
 import { motion } from "framer-motion";
@@ -141,7 +141,7 @@ export default function Home() {
             src={Filipe}
             alt="Filipe Lopes"
             priority
-            className={`block opacity-90 object-contain m-0 p-0 bg-transparent transform scale-x-[-1] ${
+            className={`block opacity-90 object-contain m-0 p-0 bg-transparent transform scale-x-[-1] z-0 ${
               windowWidth > 979 && "mb-8 h-[80vh]"
             }`}
           />
@@ -152,7 +152,7 @@ export default function Home() {
         id="compromissos"
         className={`flex flex-col w-full ${
           windowWidth < 540 ? "px-6" : windowWidth < 1439 ? "px-14" : "px-24"
-        } py-14 bg-slate-800 rounded-[20px] text-white gap-5 shadow-lg shadow-slate-400`}
+        } py-14 z-10 bg-slate-800 rounded-[20px] text-white gap-5 shadow-lg shadow-slate-400`}
       >
         <h4 className="text-start text-4xl uppercase font-extrabold">
           Compromissos
@@ -243,32 +243,29 @@ export default function Home() {
                   : "text-lg"
               }`}
             >
-              Endereço: Av. Ely Corrêa, 735 Gravataí - RS 94190-31
+              Endereço: RS-020, 3919 - Neópolis, Gravataí - RS, 94100-250.
             </h6>
             <h6 className={`${windowWidth > 1439 ? "text-2xl" : "text-lg"}`}>
-              Data: 10/09/2024
+              Data: Toda a Sexta-Feira
             </h6>
             <p
               className={`mt-5 ${windowWidth < 861 && "text-justify"} ${
                 windowWidth > 1439 ? "text-2xl" : "text-lg"
               }`}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-              dolore ad provident, similique, eum ullam placeat necessitatibus
-              ratione culpa architecto vel incidunt reiciendis sint temporibus
-              quae fuga voluptatem ea rerum.
+              Reunião semanal da nossa coordenação de campanha na Lider Madeiras.
             </p>
           </div>
           <picture className="relative overflow-hidden bg-center">
             <Image
               src={Local}
               alt="Evento"
-              className={`w-[350px] ${
-                windowWidth < 421 ? "h-[50vh]" : "h-[65vh]"
+              className={`w-[450px] ${
+                windowWidth < 421 ? "h-[300px]" : "h-[450px]"
               } object-cover border-black/20 border-2 drop-shadow-xl drop-shadow-slate-400 bg-gradient-to-r from-green-700  via-red-500 to-yellow-500`}
             />
             <div
-              className={`absolute top-0 left-0 w-[350px] ${
+              className={`absolute top-0 left-0 w-[450px] ${
                 windowWidth < 421 ? "h-[50vh]" : "h-[65vh]"
               } bg-gradient-to-r from-green-700  via-red-500 to-yellow-500 opacity-20`}
             ></div>
