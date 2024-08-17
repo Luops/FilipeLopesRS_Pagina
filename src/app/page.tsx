@@ -8,7 +8,6 @@ import Image from "next/image";
 
 // Images
 import Filipe from "../app/assets/DSC_3217 .png";
-import Local from "../app/assets/Lider_Madeiras.jpg";
 
 // Animations
 import { motion } from "framer-motion";
@@ -212,7 +211,7 @@ export default function Home() {
         className={`flex flex-col w-full  ${
           windowWidth < 540 ? "px-6" : windowWidth < 1439 ? "px-14" : "px-24"
         }
-        } py-6 gap-5`}
+        } py-24 gap-5`}
       >
         <h4 className="text-start text-4xl uppercase font-extrabold">
           Eventos
@@ -253,9 +252,10 @@ export default function Home() {
                 windowWidth > 1439 ? "text-2xl" : "text-lg"
               }`}
             >
-              Reunião semanal da nossa coordenação de campanha na Lider Madeiras.
+              Reunião semanal da nossa coordenação de campanha.
             </p>
           </div>
+          {/*
           <picture className="relative overflow-hidden bg-center">
             <Image
               src={Local}
@@ -269,7 +269,7 @@ export default function Home() {
                 windowWidth < 421 ? "h-[50vh]" : "h-[65vh]"
               } bg-gradient-to-r from-green-700  via-red-500 to-yellow-500 opacity-20`}
             ></div>
-          </picture>
+          </picture>*/}
         </article>
       </section>
       {/*Contato*/}
